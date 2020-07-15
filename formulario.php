@@ -130,7 +130,6 @@ if(isset($data_generate)){
         var name_student = '<?php echo $name_student; ?>'
         var pathToFile = `certificado_${name_student}`
         pdf.addHTML(content, 15, 15, options, function() {
-            // pdf.save('certificado_'+name_student);
             pdf.output('save', pathToFile);
         });
         // pdf.save('informe.pdf');
